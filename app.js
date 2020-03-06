@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const handlebars = require('express-handlebars');
 const fetch = require('node-fetch');
-const backstop = require('backstopjs');
+const connectDB = require('./db');
 
 const app = express();
 require('dotenv/config');
@@ -54,17 +54,9 @@ app.get('/', (req, res) => {
 
     });
 
-
+// Connect to database
+connectDB();
     
-//Conect to MongoDB
-mongoose.connect(
-    process.env.DB_CONNECTION,
-    //'mongodb://drabick:Tron1414!@ds035448.mlab.com:35448/mcp13',
-    { useNewUrlParser: true, useUnifiedTopology: true }, 
-    () => 
-    console.log('Connected to MongoDB')
-);
-
 // lisgerner
 
 app.listen(3000);
