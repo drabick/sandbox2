@@ -1,0 +1,32 @@
+
+.fixed_header{
+    width: 1200px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 500px;
+}
+
+.fixed_header thead tr {
+   display: block;
+}
+
+.fixed_header thead {
+  background: blue;
+  color:#fff;
+  border: 1px solid rgb(26, 153, 83);
+  align: center;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+  text-align: left;
+  width: 220px;
+}
+
+      tr:nth-child(even){background-color: #f2f2f2}
