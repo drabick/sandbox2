@@ -1,32 +1,20 @@
 
-.fixed_header{
-    width: 1200px;
-    table-layout: fixed;
-    border-collapse: collapse;
+table, th, td {
+  border: 1px solid black;
 }
 
-.fixed_header tbody{
+table thead tr{
+    display:block;
+}
+
+table th,table td{
+    width:100px;//fixed width
+}
+
+table  tbody{
   display:block;
-  width: 100%;
-  overflow: auto;
-  height: 500px;
+  height:200px;
+  overflow:auto;//set tbody to auto
 }
 
-.fixed_header thead tr {
-   display: block;
-}
-
-.fixed_header thead {
-  background: blue;
-  color:#fff;
-  border: 1px solid rgb(26, 153, 83);
-  align: center;
-}
-
-.fixed_header th, .fixed_header td {
-  padding: 5px;
-  text-align: left;
-  width: 220px;
-}
-
-      tr:nth-child(even){background-color: #f2f2f2}
+  tr:nth-child(even) {background: #CCC}

@@ -5,41 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
     <title>My Awesome App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    
     <style>
-.fixed_header{
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
+table, th, td {
+  border: 1px solid black;
 }
 
-.fixed_header tbody{
+table thead tr{
+    display:block;
+}
+
+table th,table td{
+    width:100px;//fixed width
+}
+
+table  tbody{
   display:block;
-  width: 100%;
-  overflow: auto;
-  height: 500px;
+  height:200px;
+  overflow:auto;//set tbody to auto
 }
 
-.fixed_header thead tr {
-   display: block;
-}
+  tr:nth-child(even) {background: #CCC}
 
-.fixed_header thead {
-  background: blue;
-  color:#fff;
-  border: 1px solid rgb(26, 153, 83);
-  align: center;
-}
-
-.fixed_header th, .fixed_header td {
-  padding: 5px;
-  text-align: left;
-  width: 220px;
-}
-
-      tr:nth-child(even){background-color: #f2f2f2}
-    </style>
-  
+</style>
   </head>
   <body>
     {{{body}}}
