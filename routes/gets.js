@@ -31,6 +31,10 @@ router.get('/user/name', function(req, res) {
 });
 
 
+
+
+
+
 router.post('/street', async (req,res,next) => {
 
 //Get Street to serqch for
@@ -47,7 +51,11 @@ let street = req.body.street;
     res.render('main', {crimes: cdata});
 });
 
-module.exports = router;
+
+
+
+
+
 
 router.get('/street', async (req,res,next) => {
 
