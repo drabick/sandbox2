@@ -1,20 +1,24 @@
-
-table, th, td {
-  border: 1px solid black;
+table,
+th,
+td {
+	border: 1px solid black;
 }
 
-table thead tr{
-    display:block;
+table thead tr {
+	display: block;
 }
 
-table th,table td{
-    width:100px;//fixed width
+table th,
+table td {
+	width: 200px; //fixed width
 }
 
-table  tbody{
-  display:block;
-  height:200px;
-  overflow:auto;//set tbody to auto
+table tbody {
+	display: block;
+	height: 500px;
+	overflow: auto; //set tbody to auto
 }
 
-  tr:nth-child(even) {background: #CCC}
+tr:nth-child(even) {
+	background: #ccc;
+}
