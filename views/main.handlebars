@@ -1,33 +1,33 @@
 <h2>Chicago Crimes</h2>
 
-<form action="/gets/street"  method="get">
-  <label for="fname">Enter Streety:</label><br>
-  <input type="text" id="street" name="street" value=""><br>
-   <input type="submit" value="Submit">
+<form action="/gets/street" method="get">
+    <label for="fname">Enter Streety:</label><br>
+    <input type="text" id="street" name="street" value=""><br>
+    <input type="submit" value="Submit">
 </form>
 
 <p></p>
 
 <table style="width:100%">
-<thead>
-    <tr>
-        <th>Date</th>
-        <th>Block</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Location</th>
-        <th></th>
-    </tr>
-</thead>
-<tbody>
-{{#each crimes}}
-    <tr align="center">
-        <td>{{this.date}}</td>
-        <td>{{this.block}}</td>
-        <td>{{this.primary_type}}</td>
-        <td>{{this.description}}</td>
-        <td>{{this.location_description}}</td>
-    </tr>
-{{/each}}
-</tbody>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Block</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each crimes}}
+        <tr align="center">
+            <td>{{this.date}}</td>
+            <td>{{this.block}}</td>
+            <td>{{this.primary_type}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.location_description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
 </table>

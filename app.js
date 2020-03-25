@@ -20,6 +20,8 @@ app.use(bodyparser.json());
 app.use("/gets", getsRoute);
 app.use("/posts", postsRoute);
 
+app.use(express.static(__dirname + "/public"));
+
 //Handlebar engine
 //Sets handlebars configurations (we will go through them later on)
 app.engine(
@@ -41,7 +43,7 @@ app.get("/", async (req, res) => {
 		//this will eventually be handled by your error handling middleware
 		next(e);
 	}
-	res.render("main", { crimes: cdata });
+	res.render("main2", { crimes: cdata });
 });
 
 // Connect to database
