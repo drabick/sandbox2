@@ -1,13 +1,11 @@
-<tbody>
-  <div class="main">
-    {{#each crimes}}
-    <div class="column">
-      <div class="card">
-        <h3>{{this.primary_type}}</h3>
-        <p>{{this.block}}</p>
-        <p>{{this.date}}</p>
-      </div>
+<div class="main">
+  {{#each crimes}}
+  <div class="column">
+    <div class="card">
+      <h3>{{this.primary_type}}</h3>
+      <p>{{this.block}}</p>
+      <p>{{this.date}}</p>
     </div>
-    {{/each}}
   </div>
-</tbody>
+  {{/each}}
+</div>
